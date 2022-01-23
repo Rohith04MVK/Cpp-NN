@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 project(Cpp-NN CXX)
-include_directories(nn)
+include_directories(src)
 
 set(CMAKE_CXX_STANDARD 11)
 option(NNCPP_BUILD_EXAMPLES "Whether to build examples" ON)
