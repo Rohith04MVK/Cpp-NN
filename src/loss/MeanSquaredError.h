@@ -3,11 +3,12 @@
 
 #include <unsupported/Eigen/CXX11/Tensor>
 
-namespace nn {
-    template<typename Dtype, int Dims>
-    class MeanSquaredError {
+namespace nn
+{
+    template <typename Dtype, int Dims>
+    class MeanSquaredError
+    {
     public:
-
         MeanSquaredError() = default;
 
         Dtype loss(const Eigen::Tensor<Dtype, Dims> &predictions, const Eigen::Tensor<Dtype, Dims> &labels);
@@ -16,9 +17,10 @@ namespace nn {
         backward(const Eigen::Tensor<Dtype, Dims> &predictions, const Eigen::Tensor<Dtype, Dims> &labels);
     };
 
-    template<typename Dtype, int Dims>
+    template <typename Dtype, int Dims>
     Dtype MeanSquaredError<Dtype, Dims>::loss(const Eigen::Tensor<Dtype, Dims> &predictions,
-                                              const Eigen::Tensor<Dtype, Dims> &labels) {
+                                              const Eigen::Tensor<Dtype, Dims> &labels)
+    {
         assert(predictions.dimensions()[0] == labels.dimensions()[0] &&
                "MeanSquaredError::loss dimensions don't match");
         assert(predictions.dimensions()[1] == labels.dimensions()[1] &&
@@ -30,9 +32,10 @@ namespace nn {
         return squaredSum(0) / batchSize;
     }
 
-    template<typename Dtype, int Dims>
+    template <typename Dtype, int Dims>
     Eigen::Tensor<Dtype, Dims> MeanSquaredError<Dtype, Dims>::backward(const Eigen::Tensor<Dtype, Dims> &predictions,
-                                                                       const Eigen::Tensor<Dtype, Dims> &labels) {
+                                                                       const Eigen::Tensor<Dtype, Dims> &labels)
+    {
         return predictions - labels;
     }
 }

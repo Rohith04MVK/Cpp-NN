@@ -3,6 +3,5 @@
 
 #include "CrossEntropy.h"
 #include "MeanSquaredError.h"
-#include "HuberLoss.h"
 
 #endif //NN_CPP_LOSSES_H
