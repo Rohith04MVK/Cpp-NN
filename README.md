@@ -2,12 +2,15 @@
 <h3 align="center">A simple Neural Network library written in C++</h3>
 
 ## Installation 🚀
+
 #### Clone the repo
+
 ```sh
 git clone https://github.com/Rohith04MVK/Cpp-NN
 ```
 
 #### Run the examples
+
 ```sh
 # TODO add tests
 mkdir build
