@@ -5,11 +5,13 @@
 #include <unsupported/Eigen/CXX11/Tensor>
 #include "optimizers/Optimizers.h"
 
-namespace nn {
+namespace nn
+{
     template <typename Dtype = float, int Dims = 2>
-    class Layer {
+    class Layer
+    {
     public:
-        virtual const std::string& getName() = 0;
+        virtual const std::string &getName() = 0;
 
         virtual Eigen::Tensor<Dtype, Dims> forward(const Eigen::Tensor<Dtype, Dims> &input) = 0;
 
