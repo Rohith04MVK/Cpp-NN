@@ -1,5 +1,4 @@
-#ifndef NN_CPP_CROSSENTROPY_H
-#define NN_CPP_CROSSENTROPY_H
+#pragma once
 
 #include <unsupported/Eigen/CXX11/Tensor>
 
@@ -57,4 +56,3 @@ namespace nn
         return probabilities - labels;
     }
 }
-#endif //NN_CPP_CROSSENTROPY_H

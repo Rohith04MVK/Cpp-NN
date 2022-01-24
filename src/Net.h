@@ -1,5 +1,4 @@
-#ifndef NN_CPP_NET_H
-#define NN_CPP_NET_H
+#pragma once
 
 #include "layers/Layers.h"
 #include "loss/Losses.h"
@@ -119,4 +118,3 @@ namespace nn
     };
 }
 
-#endif //NN_CPP_NET_H

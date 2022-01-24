@@ -3,7 +3,7 @@ project(Cpp-NN CXX)
 include_directories(src)
 
 set(CMAKE_CXX_STANDARD 11)
-option(NNCPP_BUILD_EXAMPLES "Whether to build examples" ON)
+option(CPP_NN_BUILD_EXAMPLE "Whether to build examples" ON)
 
 file(GLOB_RECURSE nn_sources src/*.h)
 add_library(Cpp-NN ${nn_sources})
@@ -16,7 +16,7 @@ find_package(Boost REQUIRED)
 target_include_directories(Cpp-NN PUBLIC ${EIGEN3_INCLUDE_DIR})
 
 
-if (NNCPP_BUILD_EXAMPLES)
+if (CPP_NN_BUILD_EXAMPLE)
 
     add_executable(iris_test examples/IrisTest.cpp)
     target_link_libraries(iris_test Cpp-NN)

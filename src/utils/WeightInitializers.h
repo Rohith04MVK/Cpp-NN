@@ -1,5 +1,4 @@
-#ifndef NN_CPP_WEIGHTINITIALIZERS_H
-#define NN_CPP_WEIGHTINITIALIZERS_H
+#pragma once
 
 #include <unsupported/Eigen/CXX11/Tensor>
 #include <random>
@@ -75,4 +74,3 @@ namespace nn
     };
 }
 
-#endif //NN_CPP_WEIGHTINITIALIZERS_H

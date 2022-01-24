@@ -1,7 +1,5 @@
-#ifndef NN_CPP_LOSSES_H
-#define NN_CPP_LOSSES_H
+#pragma once
 
 #include "CrossEntropy.h"
 #include "MeanSquaredError.h"
 
-#endif //NN_CPP_LOSSES_H

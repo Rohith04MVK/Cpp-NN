@@ -1,5 +1,4 @@
-#ifndef NN_CPP_MEANSQUAREDERROR_H
-#define NN_CPP_MEANSQUAREDERROR_H
+#pragma once
 
 #include <unsupported/Eigen/CXX11/Tensor>
 
@@ -40,4 +39,3 @@ namespace nn
     }
 }
 
-#endif //NN_CPP_MEANSQUAREDERROR_H

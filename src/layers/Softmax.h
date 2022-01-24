@@ -1,5 +1,4 @@
-#ifndef NN_CPP_SOFTMAX_H
-#define NN_CPP_SOFTMAX_H
+#pragma once
 
 #include "layers/Layer.h"
 
@@ -58,5 +57,3 @@ namespace nn
         return accumulatedGrad / accumulatedGrad.constant(batchSize);
     }
 }
-
-#endif //NN_CPP_SOFTMAX_H

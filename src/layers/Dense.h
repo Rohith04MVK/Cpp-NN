@@ -1,5 +1,4 @@
-#ifndef NN_CPP_DENSE_H
-#define NN_CPP_DENSE_H
+#pragma once
 
 #include "layers/Layer.h"
 #include "utils/WeightInitializers.h"
@@ -143,4 +142,3 @@ namespace nn
         }
     }
 }
-#endif //NN_CPP_DENSE_H

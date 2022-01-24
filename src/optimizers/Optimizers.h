@@ -1,5 +1,4 @@
-#ifndef NN_CPP_OPTIMIZERS_H
-#define NN_CPP_OPTIMIZERS_H
+#pragma once
 
 #include "StochasticGradientDescentImpl.h"
 #include "AdamImpl.h"
@@ -46,4 +45,3 @@ namespace nn
 
 }
 
-#endif //NN_CPP_OPTIMIZERS_H

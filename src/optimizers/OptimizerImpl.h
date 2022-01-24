@@ -1,5 +1,4 @@
-#ifndef NN_CPP_OPTIMIZERIMPL_H
-#define NN_CPP_OPTIMIZERIMPL_H
+#pragma once
 
 #include <unsupported/Eigen/CXX11/Tensor>
 #include <iostream>
@@ -14,4 +13,3 @@ namespace nn
     };
 }
 
-#endif //NN_CPP_OPTIMIZERIMPL_H

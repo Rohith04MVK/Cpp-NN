@@ -1,5 +1,4 @@
-#ifndef NN_CPP_LAYER_H
-#define NN_CPP_LAYER_H
+#pragma once
 
 #include <iostream>
 #include <unsupported/Eigen/CXX11/Tensor>
@@ -25,4 +24,3 @@ namespace nn
     };
 }
 
-#endif //NN_CPP_LAYER_H

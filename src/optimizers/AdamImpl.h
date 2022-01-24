@@ -1,5 +1,4 @@
-#ifndef NN_CPP_ADAM_IMPL_H
-#define NN_CPP_ADAM_IMPL_H
+#pragma once
 
 #include "OptimizerImpl.h"
 
@@ -57,4 +56,3 @@ namespace nn
     }
 }
 
-#endif //NN_CPP_ADAM_IMPL_H
