@@ -93,7 +93,7 @@ int main()
     nn::CrossEntropyLoss<float, 2> lossFunc;
     net.registerOptimizer(new nn::Adam<float>(0.01));
 
-    int numEpoch = 501;
+    int numEpoch = 250;
     float loss_t, accuracy_t;
     for (unsigned int ii = 0; ii < numEpoch; ++ii)
     {
