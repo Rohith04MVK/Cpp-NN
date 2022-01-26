@@ -35,3 +35,22 @@ net.add(new nn::Softmax<>());
 nn::CrossEntropyLoss<float, 2> lossFunc;
 net.registerOptimizer(new nn::Adam<float>(0.01));
 ```
+## Training!
+```cpp
+int numEpoch = 250;
+float loss_t, accuracy_t;
+for (unsigned int ii = 0; ii < numEpoch; ++ii)
+{
+    auto result = net.forward<2, 2>(input);
+
+    float loss = lossFunc.loss(result, labels);
+    float accuracy = lossFunc.accuracy(result, labels);
+    std::cout << std::setprecision(5);
+    std::cout << "Epoch: " << ii << " loss: " << loss << " accuracy: " << accuracy << std::endl;
+
+    auto lossBack = lossFunc.backward(result, labels);
+    net.backward(lossBack);
+    net.step();
+    loss_t = loss;
+    accuracy_t = accuracy;
+}
