@@ -12,7 +12,6 @@ git clone https://github.com/Rohith04MVK/Cpp-NN
 #### Run the examples
 
 ```sh
-# TODO add tests
 mkdir build
 cd build
 cmake -D CPP_NN_BUILD_EXAMPLE=ON ..
