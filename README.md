@@ -52,4 +52,4 @@ for (unsigned int ii = 0; ii < numEpoch; ++ii)
     net.step();
     loss_t = loss;
     accuracy_t = accuracy;
-    }
+ }
