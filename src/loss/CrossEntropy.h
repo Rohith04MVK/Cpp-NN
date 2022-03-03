@@ -1,3 +1,6 @@
+/**
+*Cross-entropy loss is used when adjusting model weights during training
+*/
 #pragma once
 
 #include <unsupported/Eigen/CXX11/Tensor>
